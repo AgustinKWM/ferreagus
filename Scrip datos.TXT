@@ -1,0 +1,44 @@
+-- -----------------------------------------------------
+-- Datos para tabla `Tipo_usuario`
+-- -----------------------------------------------------
+INSERT INTO `Tipo_usuario` (`Tipo_usuario`, `Descripcion`) VALUES
+('Admin', 'Administrador del sistema con acceso total'),
+('Trabajador/empleado', 'Personal de la ferretería con permisos limitados'),
+('Cliente', 'Usuario final que compra productos');
+
+-- -----------------------------------------------------
+-- Datos para tabla `categoria` (Ferretería)
+-- -----------------------------------------------------
+INSERT INTO `categoria` (`nombre`, `descripcion`) VALUES
+('Herramientas manuales', 'Martillos, destornilladores, alicates, etc.'),
+('Materiales eléctricos', 'Cables, interruptores, enchufes, etc.'),
+('Fontanería', 'Tuberías, llaves de paso, conectores, etc.'),
+('Pinturas', 'Pinturas, barnices, disolventes, etc.'),
+('Fijaciones', 'Tornillos, clavos, anclajes, etc.');
+
+-- -----------------------------------------------------
+-- Datos para tabla `marca` (Ferretería)
+-- -----------------------------------------------------
+INSERT INTO `marca` (`nombre`, `descripcion`, `logo`, `logo_path`) VALUES
+('Truper', 'Herramientas profesionales mexicanas', 'truper_logo.png', 'marcas/truper/truper_logo.png'),
+('Sodimac', 'Marca propia de Sodimac', 'sodimac_logo.png', 'marcas/sodimac/sodimac_logo.png'),
+('Bosch', 'Herramientas eléctricas alemanas', 'bosch_logo.png', 'marcas/bosch/bosch_logo.png'),
+('Vesely', 'Pinturas chilenas', 'vesely_logo.png', 'marcas/vesely/vesely_logo.png'),
+('Wurth', 'Fijaciones y químicos', 'wurth_logo.png', 'marcas/wurth/wurth_logo.png');
+
+-- -----------------------------------------------------
+-- Datos para tabla `sucursal` (Ferretería)
+-- -----------------------------------------------------
+INSERT INTO `sucursal` (
+  `nombre`, 
+  `direccion`, 
+  `telefono`, 
+  `email`, 
+  `horario`
+) VALUES (
+  'Casa Central', 
+  'Av. Ferreteros 456, Santiago', 
+  '+56223456789', 
+  'central@losplataformeros.cl', 
+  'Lunes a Viernes 9:00-19:00'
+);

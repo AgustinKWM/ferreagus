@@ -1,0 +1,26 @@
+Van a tener que utilizar dos terminales
+
+La primera la utilizaran para el backend
+	cd src
+	npm install
+	npm run dev
+		con todo eso ya tienen el backend iniciado
+
+La segunda la utilizaran para el frontend
+	cd client
+	npm install
+	npm run dev
+		con todo eso ya tienen el fronend iniciado
+
+no se olviden de iniciar el xampp y ejecutar los scrips
+
+aparte para el primer usuario que sera nuestro admin lo crean atraves de postman
+
+basicamente entran al POSTMAN
+		
+	POST : http://localhost:3000/api/v1/auth/create-admin
+	
+	Body: {	"username": "admin_ferre",
+  		"email": "admin@losplataformeros.cl",
+  		"password": "Ferre123"
+	      }
